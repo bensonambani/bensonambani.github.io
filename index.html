@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Benson Ambani Golf & Tourism offers golf guidance, independent caddying, equipment assistance and golf tourism experiences in Kenya.">
+  <meta name="description" content="Discover golf experiences in Kenya with Benson Ambani Golf & Tourism. Enquire about golf tours, beginner lessons, caddying and equipment assistance.">
+  <meta name="keywords" content="golf Kenya, golf tourism Kenya, golf lessons, caddying Kenya, golf equipment, Benson Ambani">
+  <meta name="author" content="Benson Ambani">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Benson Ambani Golf & Tourism | Golf Experiences in Kenya">
+  <meta property="og:description" content="Golf guidance, beginner lessons, caddying, equipment assistance and golf tourism in Kenya.">
+  <meta property="og:url" content="https://bensonambani.github.io/benson-ambani-golf-tourism/">
+  <link rel="canonical" href="https://bensonambani.github.io/benson-ambani-golf-tourism/">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <meta name="theme-color" content="#103d2b">
-  <title>Benson Ambani Golf &amp; Tourism</title>
+  <title>Benson Ambani Golf &amp; Tourism | Golf Experiences in Kenya</title>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SportsActivityLocation",
+    "name":"Benson Ambani Golf & Tourism",
+    "url":"https://bensonambani.github.io/benson-ambani-golf-tourism/",
+    "description":"Golf guidance, beginner lessons, independent caddying, equipment assistance and golf tourism experiences in Kenya.",
+    "telephone":"+254768971515",
+    "email":"bensonambani97@gmail.com",
+    "areaServed":{"@type":"Country","name":"Kenya"},
+    "sameAs":["https://www.facebook.com/ben.ambani.96","https://www.instagram.com/bens.on2751/","https://www.tiktok.com/@bensonambani517","https://www.youtube.com/@bensonambani2110"]
+  }
+  </script>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -14,7 +35,7 @@
   <h2>Benson Ambani Golf &amp; Tourism</h2>
   <nav aria-label="Main navigation">
     <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
-    <a href="#gallery">Gallery</a><a href="#advertise">Advertise</a><a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a><a href="#booking">Book</a><a href="#advertise">Advertise</a><a href="#contact">Contact</a>
   </nav>
 </header>
 <main>
@@ -22,7 +43,7 @@
   <p class="welcome-label">GOLF • TOURISM • EXPERIENCES</p>
   <h1>Discover Golf Experiences in Kenya</h1>
   <p>Welcome to Benson Ambani Golf &amp; Tourism. Get golf guidance, independent caddying services, equipment assistance and golf tourism information.</p>
-  <a href="https://wa.me/254768971515?text=Hello%20Benson%2C%20I%20would%20like%20to%20know%20more%20about%20your%20golf%20services." class="button" target="_blank" rel="noopener">Explore Golf Services</a>
+  <a href="#booking" class="button">Book a Golf Experience</a>
 </section>
 <section id="about">
   <h2>About Benson Ambani</h2>
@@ -42,6 +63,21 @@
     <article class="card"><h3>Golf Equipment</h3><p>Buying and selling second-hand golf clubs, bags, balls and accessories. Golf club hire: KSh 3,000 per day.</p></article>
     <article class="card"><h3>Golf Tourism</h3><p>Golf touring with Benson starts at KSh 5,000, depending on the golf course or destination.</p></article>
   </div>
+</section>
+<section id="booking">
+  <h2>Book a Golf Experience</h2>
+  <p>Tell me what you are interested in and your preferred date. Your enquiry will open in WhatsApp for you to review and send.</p>
+  <div class="booking-form"><form id="booking-form">
+    <label for="book-name">Your name</label><input id="book-name" name="name" autocomplete="name" required placeholder="Enter your name">
+    <label for="book-contact">Your phone number or email</label><input id="book-contact" name="contact" required placeholder="How can I reach you?">
+    <label for="book-service">Service you are interested in</label>
+    <select id="book-service" name="service" required><option value="">Choose a service</option><option>Golf tourism / golf tour</option><option>Independent caddying</option><option>Beginner golf lesson / guidance</option><option>Golf playing and game improvement</option><option>Golf equipment inspection</option><option>Golf club selection</option><option>Golf club hire</option><option>Professional coaching referral</option><option>Other enquiry</option></select>
+    <label for="book-date">Preferred date</label><input id="book-date" name="date" type="date">
+    <label for="book-location">Preferred golf course or destination</label><input id="book-location" name="location" placeholder="e.g. Nairobi or preferred golf course">
+    <label for="book-message">Additional details</label><textarea id="book-message" name="message" rows="4" placeholder="Tell me a little more about what you need"></textarea>
+    <button type="submit" class="button">Send Booking Enquiry on WhatsApp</button>
+  </form></div>
+  <p class="form-note">This is an enquiry, not a confirmed reservation. Availability, club rules, fees and additional costs will be discussed before arrangements are confirmed.</p>
 </section>
 <section id="gallery">
   <h2>My Golf Gallery</h2><p>Explore my golfing journey and experiences in Kenya.</p>
