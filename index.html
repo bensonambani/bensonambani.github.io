@@ -35,7 +35,7 @@
   <h2>Benson Ambani Golf &amp; Tourism</h2>
   <nav aria-label="Main navigation">
     <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
-    <a href="#gallery">Gallery</a><a href="#booking">Book</a><a href="#advertise">Advertise</a><a href="#golf-for-change">Golf for Change</a><a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a><a href="#booking">Book</a><a href="#advertise">Advertise</a><a href="#marketplace">Golf Marketplace</a><a href="#golf-for-change">Golf for Change</a><a href="#contact">Contact</a>
   </nav>
 </header>
 <main>
@@ -116,6 +116,50 @@
   <p>Email: <a href="mailto:bensonambani97@gmail.com">bensonambani97@gmail.com</a></p>
 </section>
 
+
+<section id="marketplace">
+  <p class="welcome-label">BUY • SELL • CONNECT • PLAY</p>
+  <h2>Golf Marketplace</h2>
+  <p class="marketplace-intro">A meeting place for golfers, golf clubs, coaches and businesses. Discover golf equipment, find playing partners, share services and connect with the Kenyan golf community.</p>
+  <div class="marketplace-categories" aria-label="Marketplace categories">
+    <button type="button" class="market-filter active" data-filter="all" aria-pressed="true">All categories</button>
+    <button type="button" class="market-filter" data-filter="equipment" aria-pressed="false">Buy &amp; sell equipment</button>
+    <button type="button" class="market-filter" data-filter="partners" aria-pressed="false">Find playing partners</button>
+    <button type="button" class="market-filter" data-filter="coaching" aria-pressed="false">Coaches &amp; lessons</button>
+    <button type="button" class="market-filter" data-filter="services" aria-pressed="false">Golf services</button>
+    <button type="button" class="market-filter" data-filter="events" aria-pressed="false">Events &amp; tournaments</button>
+  </div>
+  <div class="marketplace-grid" id="marketplace-grid">
+    <article class="market-tile" data-category="equipment"><span class="market-icon" aria-hidden="true">🏌️</span><h3>Golf Equipment</h3><p>List or find clubs, golf bags, balls, shoes, gloves and accessories.</p><button type="button" class="market-action" data-select="equipment">Explore this category</button></article>
+    <article class="market-tile" data-category="partners"><span class="market-icon" aria-hidden="true">🤝</span><h3>Find Playing Partners</h3><p>Meet golfers, arrange a friendly round and connect with people at your level.</p><button type="button" class="market-action" data-select="partners">Connect with golfers</button></article>
+    <article class="market-tile" data-category="coaching"><span class="market-icon" aria-hidden="true">⛳</span><h3>Coaches &amp; Lessons</h3><p>Share coaching offers, beginner lessons, clinics and golf improvement support.</p><button type="button" class="market-action" data-select="coaching">Find coaching</button></article>
+    <article class="market-tile" data-category="services"><span class="market-icon" aria-hidden="true">🧰</span><h3>Golf Services</h3><p>Promote caddying, club fitting, repairs, transport, golf tourism and other services.</p><button type="button" class="market-action" data-select="services">Explore services</button></article>
+    <article class="market-tile" data-category="events"><span class="market-icon" aria-hidden="true">🏆</span><h3>Events &amp; Tournaments</h3><p>Share golf days, competitions, charity tournaments and community meetups.</p><button type="button" class="market-action" data-select="events">Discover events</button></article>
+  </div>
+  <div class="marketplace-board">
+    <h3>Community listings</h3>
+    <p>Be among the first golfers to post. Listings are submitted to Benson for review and sharing with the community.</p>
+    <div class="marketplace-empty"><strong>New community — your listing could be the first!</strong><p>Use the form below to submit an item, service, event or playing-partner request.</p></div>
+  </div>
+  <div class="marketplace-form">
+    <h3>Post to the Golf Marketplace</h3>
+    <p>Tell the community what you are offering or looking for. Your submission opens in WhatsApp so you can review it and send it to Benson.</p>
+    <form id="marketplace-form">
+      <label for="market-name">Your name</label><input id="market-name" name="name" autocomplete="name" required placeholder="Your name">
+      <label for="market-contact">Your phone number or email</label><input id="market-contact" name="contact" required placeholder="How can interested golfers reach you?">
+      <label for="market-type">What would you like to post?</label>
+      <select id="market-type" name="type" required>
+        <option value="">Choose a category</option><option value="equipment">Buy or sell golf equipment</option><option value="partners">Find playing partners</option><option value="coaching">Coaching or golf lessons</option><option value="services">Golf services</option><option value="events">Golf events or tournaments</option>
+      </select>
+      <label for="market-title">Listing title</label><input id="market-title" name="title" required maxlength="90" placeholder="e.g. Used golf clubs for sale">
+      <label for="market-location">Town, golf club or location</label><input id="market-location" name="location" placeholder="e.g. Nairobi, Kenya">
+      <label for="market-price">Price or budget (optional)</label><input id="market-price" name="price" placeholder="e.g. KSh 8,000 or Looking for a free playing partner">
+      <label for="market-description">Description</label><textarea id="market-description" name="description" rows="4" required maxlength="1000" placeholder="Describe the item, service, event or kind of playing partner you are looking for."></textarea>
+      <button type="submit" class="button">Submit listing via WhatsApp</button>
+    </form>
+    <p class="marketplace-note">Safety tip: meet in a public place or at an authorised golf facility, inspect equipment before paying, and agree on prices directly. Benson will review submissions before featuring them. Do not share passwords, PINs or sensitive financial details.</p>
+  </div>
+</section>
 <section id="golf-for-change">
   <h2>Golf for Change</h2>
   <p>Using the game of golf to create opportunities, build confidence and make a positive difference in our community.</p>
